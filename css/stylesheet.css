@@ -105,6 +105,7 @@ li {
   height: auto;
   /* margin-topを100pxにしてください */
   margin-top: 100px;
+  padding-top: 100px;
   width:100%;
   background-color: white;
   background-size:cover;
@@ -120,6 +121,7 @@ li {
   height: auto;
   /* margin-topを100pxにしてください */
   margin-top: 100px;
+  padding-top: 100px;
   width:100%;
   background-image: url("../images/background-big.png");
   background-size:cover;
