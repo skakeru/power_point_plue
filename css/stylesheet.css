@@ -108,8 +108,13 @@ li {
   width:100%;
   background-color: white;
   background-size:cover;
-
 }
+
+.swiper-slide img{
+  width: 80%;
+}
+
+
 
 .contents-3 {
   height: auto;
