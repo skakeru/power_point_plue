@@ -60,6 +60,12 @@ li {
 
 }
 
+.win .side-menu li a{
+  /* Windows (全バージョン)のみ */
+  font-family: Futura, 'Century Gothic';
+  font-weight: 600;
+}
+
 .main {
   padding: 120px 150px;
   text-align: center;
@@ -291,9 +297,10 @@ li {
   color: #000;
   background: rgba(255,0,0,0);
   height: 100px;
-  width: 100%;
+  width: 10%;
   position: fixed;
   bottom: 0;
+  right: 0;
   z-index:999;
 }
 
