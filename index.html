@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>POWERPOINT+</title>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
   </head>
   <body>
     <div class="header">
@@ -61,11 +60,29 @@
           <div class="title">
             <img src="./images/works.png">
           </div>
-        <ul class="slider">
-           <li><img alt="画像1" src="images/stone.jpeg" /></li>
-           <li><img alt="画像1" src="images/snow.jpeg" /></li>
-           <li><img alt="画像1" src="images/nanka.jpeg" /></li>
-         </ul>
+          <div class="row">
+          <style>
+          .nms-plugin-20180424043848 .swiper-slide-active:hover,
+          .nms-plugin-20180424043848 .swiper-slide-next, .swiper-slide-prev { opacity: 0.4; }
+          .nms-plugin-20180424043848 .swiper-button-next,
+          .nms-plugin-20180424043848 .swiper-button-prev { background-image: none; color: #222; top:47%;}
+          .nms-plugin-20180424043848 .swiper-pagination { position: initial; }
+          .nms-plugin-20180424043848 .swiper-pagination-bullet-active { background-color: #222; }
+          </style>
+          <div class="swiper-container nms-plugin-20180424043848" data-perview="2">
+             <div class="swiper-wrapper" data-id="1cb40aa9-4381-4eaf-8c03-18c2572a5391" isbind="1">
+               <div class="swiper-slide"><img src="./images/stone.jpeg" alt=""></div>
+               <div class="swiper-slide"><img src="./images/logogif.gif" alt=""></div>
+               <div class="swiper-slide"><img src="./images/snow.jpeg" alt=""></div>
+               <div class="swiper-slide"><img src="./images/nanka.jpeg" alt=""></div>
+               <div class="swiper-slide"><img src="./images/9000.gif" alt=""></div>
+                <div class="swiper-slide"><img src="./images/car.jpeg" alt=""></div>
+             </div>
+             <div class="swiper-pagination swiper-pagination-black swiper-pagination-clickable swiper-pagination-bullets"></div>
+             <div class="swiper-button-prev swiper-button-black"><div class="fa fa-angle-right fa-3x"></div></div>
+             <div class="swiper-button-next swiper-button-black"><div class="fa fa-angle-left fa-3x"></div></div>
+          </div>
+        </div>
          <div class="button-container">
            <a href="https://www.google.com/intl/ja_jp/forms/about/">
                <img src="./images/other.png">
@@ -142,9 +159,26 @@
       </a>
 
     </div><!-- menu -->
+    <script type="text/javascript" src="./js/carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+    <script src="swiper.js"></script>
+    <script>
+          var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            centeredSlides : true,
+            slidesPerView: 1.5,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+              },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
+      }
+    });
+    </script>
+</body>
   </body>
 </html>
